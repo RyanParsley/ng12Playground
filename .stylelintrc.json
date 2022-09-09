@@ -1,0 +1,23 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "string-quotes": "single",
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["ng-deep"]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts"],
+      "customSyntax": "postcss-styled",
+      "rules": {
+        "no-empty-first-line": null,
+        "no-missing-end-of-source-newline": null,
+        "no-eol-whitespace": null
+      }
+    }
+  ]
+}
