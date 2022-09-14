@@ -1,6 +1,7 @@
 {
   "root": true,
   "ignorePatterns": ["projects/**/*"],
+  "plugins": ["sonarjs", "functional"],
   "overrides": [
     {
       "files": ["*.ts"],
